@@ -1,0 +1,45 @@
+{{define "top"}}
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="./dist/style.css">
+      <script src="./dist/index.js"></script>
+    </head>
+    <body>
+      <div id="header">
+        <h1 id="page-title">Vue.js & TypeScript Demo</h1>
+      </div>
+
+      <div id="home">
+        <div id="main">
+          <div id="main-top">
+            <h2 id="main-title">{{title}}</h2>
+            <div id="editor-select">
+            <select v-model="selectedTextType">
+              <option v-for="textType in textTypes">{{selectOptions(textType)}}</option>
+            </select>
+            </div>
+          </div>
+          <div class="markdown-area">
+            <div class="note">
+              <textarea v-model=description></textarea>
+            </div>
+            <div class="preview">
+              <div v-if="isTextTypePlaneText()"><p class="plane-text">{{description}}</p></div>
+              <div v-else-if="isTextTypeMarkdown()" v-html="markdownDescription">mark</div>
+              <div v-else-if="isTextTypeHtml()" v-html="description">html</div>
+            </div>
+          </div>
+          </p>
+        </div>
+      </div>
+
+      <script>
+        vm = new HomeViewModel({
+          el: "#main",
+        })
+      </script>
+  </body>
+  </html>
+{{end}}

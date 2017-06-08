@@ -1,0 +1,93 @@
+html, body, p {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #222;
+  color: white;
+  width: 100%;
+}
+
+div#home {
+  margin: 0 auto;
+  width: 1400px;
+}
+
+#page-title {
+  text-align: center;
+  padding: 15px 0px;
+  background-color: #444;
+  margin: 0;
+}
+
+#next {
+  display: none;
+}
+
+
+#main {
+  width: 1400px;
+  text-align: center;
+  display: inline-block;
+}
+
+.note {
+  margin: 0 auto;
+  width: 700px;
+  height: 700px;
+  float: left;
+}
+.markdown-area {
+  font-size: 22px;
+}
+.preview {
+  width: 650px;
+  height: 600px;
+  background-color: #000;
+  float: right;
+  border-radius: 10px;
+  padding: 10px;
+  border: solid 1px;
+  border-color: #070;
+  text-align: left;
+  font-family: monospace;
+}
+
+textarea {
+  width: 660px;
+  height: 600px;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  border: solid 1px #070;
+  background-color: #333;
+  color: white;
+}
+textarea:focus {
+  border: solid 1px green;
+  box-shadow: 5px 5px 5px darkgreen;
+  outline: none;
+}
+
+#main-top {
+  display: inline-block;
+  width: 310px;
+}
+#main-title {
+  float: left;
+}
+#editor-select {
+  margin-top: 20px;
+  margin-left: 20px;
+  float: left;
+}
+#editor-select select {
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.plane-text {
+  white-space: pre;
+}
