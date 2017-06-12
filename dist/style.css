@@ -3,7 +3,7 @@ html, body, p {
   margin: 0;
 }
 body {
-  background-color: #222;
+  background-color: #fff;
   color: white;
   width: 100%;
 }
@@ -16,7 +16,7 @@ div#home {
 #page-title {
   text-align: center;
   padding: 15px 0px;
-  background-color: #444;
+  background-color: #666;
   margin: 0;
 }
 
@@ -40,10 +40,11 @@ div#home {
 .markdown-area {
   font-size: 22px;
 }
+
 .preview {
   width: 650px;
   height: 600px;
-  background-color: #000;
+  background-color: #fff;
   float: right;
   border-radius: 10px;
   padding: 10px;
@@ -61,7 +62,7 @@ textarea {
   border-radius: 10px;
   padding: 10px;
   border: solid 1px #070;
-  background-color: #333;
+  background-color: #999;
   color: white;
 }
 textarea:focus {
@@ -72,14 +73,19 @@ textarea:focus {
 
 #main-top {
   display: inline-block;
-  width: 310px;
+  width: 1310px;
 }
 #main-title {
   float: left;
 }
 #editor-select {
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 70px;
+  margin-left: -300px;
+  float: left;
+}
+#editor-clear-text {
+  margin-top: 70px;
+  margin-left: -100px;
   float: left;
 }
 #editor-select select {
